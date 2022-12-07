@@ -1,1 +1,9 @@
 remove installer files for mysql-config and mysql-shell
+
+The shell history issue can be resolved by:
+Ref: Docker in Practice: pg 113 (134/456)
+ To share your bash history with the host, you can use a volume mount when running your Docker images. Here’s an example:
+$ docker run -e HIST_FILE=/root/.bash_history \
+-v=$HOME/.bash_history:/root/.bash_history \
+-ti ubuntu /bin/bash
+

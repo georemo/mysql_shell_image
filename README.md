@@ -13,4 +13,5 @@ While trying to set a volume for persistant data:<br>
 <br>Error:<br>
 ```/usr/lib/mysqlsh/python-packages: No such file or directory (errno 2)```
 <br> 
+see notes for possible solution to above error(georemo - 08/12/2022)
 Ref: https://hub.docker.com/repository/docker/<docker-user>/mysql-shell
